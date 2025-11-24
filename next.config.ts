@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   images: {
     domains: [
-        'images-ext-1.discordapp.net',
+        'https://aceternity.com/images/products/thumbnails',
     ],
 },
 };
