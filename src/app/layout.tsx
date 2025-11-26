@@ -5,6 +5,7 @@ import ApplicationHeader from "@/components/application/layout/header";
 import TerminalFooter from "@/components/application/shared/terminal-footer";
 import WhatsAppCTA from "@/components/application/shared/hero/whatsapp-cta";
 import { IBM_Plex_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,6 +58,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${pixelFont.variable} ${ibmMono.variable} ${shareTech.variable} antialiased`}
       >
+        <Analytics />
         <ApplicationHeader />
         {children}
         <TerminalFooter />
